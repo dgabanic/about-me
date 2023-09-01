@@ -9,11 +9,14 @@ import { BrowserModule } from '@angular/platform-browser';
 const routes: Routes = [
   { path: 'home',   component: HomeComponent },
   { path: 'personal',   component: PersonalComponent },
-  { path: 'professional',   component: ProfessionalComponent, 
+  // Can create a custom routing module for professional/personal to enable child routing - don't feel like it now
+  /*{ path: 'professional',   component: ProfessionalComponent, 
     children: [
       { path: 'aws', component: AWSComponent }
     ]
-  },
+  },*/
+  { path: 'professional',   component: ProfessionalComponent },
+  { path: 'aws',   component: AWSComponent },
   { path: '**', redirectTo: '/home' }
 ];
 @NgModule({
