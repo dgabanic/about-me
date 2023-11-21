@@ -5,8 +5,8 @@ text-align: center;
 }
 
 ul {
-width: 50%;
 margin: auto;
+padding:0;
 }
 
 .container{
@@ -14,20 +14,30 @@ margin: auto;
 }
 
 @media screen and (min-width: 600px) {
-  .panel-background{
-  background: url("../../../assets/images/backgroundDesktop.png") no-repeat center center fixed;
-  }
-  .panel-default{
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    top: 50%;
-  }
+.panel-background{
+background: url("../../../assets/images/backgroundDesktop.png") no-repeat center center fixed;
+}
+.panel-default{
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+top: 50%;
+}
+ul {
+width: 50%;
+}
 }
 
 @media screen and (max-width: 600px) {
-  .panel-background{
-  background: url("../../../assets/images/backgroundMobile.png") no-repeat center center fixed;
-  }
+.panel-background{
+background: url("../../../assets/images/backgroundMobile.png") no-repeat center center fixed;
+}
+
+.panel-default{
+height:-webkit-fill-available;
+}
+ul {
+width: 100%;
+}
 }
 
 .panel-default{

@@ -7,11 +7,6 @@ h1, h3{
 text-align: center;
 }
 
-ul {
-width: 50%;
-margin: auto;
-}
-
 .container{
 padding-bottom: 15px;
 }
@@ -44,6 +39,19 @@ top: 50%;
 .container{
 padding-bottom: 15px;
 }
+
+@media screen and (min-width: 600px) {
+}
+  
+@media screen and (max-width: 600px) {
+.panel-default{
+text-align: center;
+}
+.navbar-brand{
+font-size: 15px;
+}
+}
+  
   
 .panel-default{
 opacity: 0.9;
