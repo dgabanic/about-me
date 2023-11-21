@@ -7,6 +7,7 @@ import { PersonalComponent } from './pages/personal/personal.component';
 import { ProfessionalComponent } from './pages/professional/professional.component';
 import { AWSComponent } from './pages/professional/aws/aws.component';
 import { HomeComponent } from './pages/home/home.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { HomeComponent } from './pages/home/home.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,3 +2,4 @@ node_modules
 dist/*
 .angular/cache
 package-lock.json
+docs/*
