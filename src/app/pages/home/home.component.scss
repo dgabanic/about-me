@@ -1,7 +1,4 @@
-@page {
-size: 21cm 29.7cm;
-margin: 30mm 45mm 30mm 45mm;
-}
+
 
 h1, h3{
 text-align: center;
@@ -16,20 +13,30 @@ margin: auto;
   padding-bottom: 15px;
 }
 
-.panel-background{
-background: url("../../../assets/images/underConstruction.png") no-repeat center center fixed;
+@media screen and (min-width: 600px) {
+  .panel-background{
+  background: url("../../../assets/images/backgroundDesktop.png") no-repeat center center fixed;
+  }
+  .panel-default{
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .panel-background{
+  background: url("../../../assets/images/backgroundMobile.png") no-repeat center center fixed;
+  }
 }
 
 .panel-default{
 /* Light mode: empty */
-opacity: 0.85;
+opacity: 0.75;
 background-color: #1c1c1c !important;
 margin: auto;
 position: absolute;
-top: 50%;
 width: 100%;
--ms-transform: translateY(-50%);
-transform: translateY(-50%);
 }
 
 .panel-body{
